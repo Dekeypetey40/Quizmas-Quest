@@ -1,0 +1,71 @@
+:root {
+    background-color: #294D4A
+}
+
+.container {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container-sports {
+    background-image: url("https://i.imgur.com/p5racXp.jpg");
+    
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    /* max-width: 80rem; */
+    /* margin: 0 auto; */
+}
+
+.container-math {
+    background-image: url("https://i.imgur.com/bI6iENR.jpg");
+    
+}
+
+.container-geo {
+    background-image: url("https://i.imgur.com/ckNpRub.jpg");
+    
+}
+
+
+.geo-hud, .geo-question {
+    text-shadow: 0px 0px 8px #ffffff;
+    color: black;
+    
+}
+
+/* animated fact container*/
+.intro-container {
+    padding: 30px;
+    background-color: inherit;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.intro-title {
+    animation: fadeIn 2s ease-in;
+    font-size: 3em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.intro-description {
+    font-size: 1.2em;
+    line-height: 1.5;
+}
+
+.text-center {
+    text-align: center;
+    font-size: 1.4rem;
+}
