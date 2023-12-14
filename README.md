@@ -60,24 +60,23 @@ Some of the most important factors of the project include:
 * CSS3
 * Bootstrap
 * JavaScript
-* Django
-* Python
-* ElephantSQL
-* API
-* Heroku
+* Tailwind
+* Git
+
 
 ## Local Deployment
 
 In order to make a local copy of this project, you can clone it.
 In your IDE Terminal, type the following command to clone our repository:
 
-- `git clone https://github.com/KTC96/ShoreCleanse`
+- `git clone https://github.com/Dekeypetey40/hackathon-team-11.git`
 
 ## Potential Future Features
 
-- In the future adding a feature for users to upload their individual trash collection would be beneficial for users to monitor and display their efforts.
+- Adding more categories
 
- - Adding some merchandise to an online store with a portion of the proceeds going towards the environmental efforts and utilizing a social media marketing campaign would help increase both the traffic to the site and funding for the environmental cause.
+ - Adding difficulty levels for all categories
+ - Adding different Holiday theme quizzes eg. Halloween, Easter, St Patricks day etc...
 
 
 ## Testing
