@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Nova+Square&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gwendolyn:wght@400;700&family=Montserrat:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+
 
 :root {
   background-color: #1F2041
@@ -33,7 +35,14 @@ h2 {
 }
 
 .container-index {
-  background-image: url("https://i.imgur.com/eQwsRb1.jpg");
+  background-image: url("../assets/images/christmas_sant.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container-category {
+  background-image: url("../assets/images/christmas_santa.jpeg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
