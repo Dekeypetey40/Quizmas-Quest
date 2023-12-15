@@ -8,8 +8,8 @@
     background-size: cover;
 }
 
-.container-sports {
-    background-image: url("https://i.imgur.com/p5racXp.jpg");
+.container-family {
+    background-image: url("https://i.imgur.com/9BMMp1o.jpeg");
     
     /* display: flex;
     justify-content: center;
@@ -18,13 +18,13 @@
     /* margin: 0 auto; */
 }
 
-.container-math {
-    background-image: url("https://i.imgur.com/bI6iENR.jpg");
+.container-history {
+    background-image: url("https://i.imgur.com/PHJrv8G.jpeg");
     
 }
 
-.container-geo {
-    background-image: url("https://i.imgur.com/ckNpRub.jpg");
+.container-tech {
+    background-image: url("https://i.imgur.com/yPnzRwf.jpeg");
     
 }
 
