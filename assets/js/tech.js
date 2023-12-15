@@ -230,7 +230,13 @@ const MAX_QUESTIONS = 5;
 const startGame = () => {
     questionCounter = 0;
     score = 0;
-    availableQuestions = [...questions];
+
+    // Shuffle the array of questions
+    const shuffledQuestions = questions.sort(() => Math.random() - 0.5);
+
+    // Take the first 10 shuffled questions
+    availableQuestions = shuffledQuestions.slice(0, MAX_QUESTIONS);
+
     getNewQuestion();
 };
 /*Keeping track of score */
