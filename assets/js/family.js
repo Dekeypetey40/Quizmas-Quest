@@ -13,6 +13,10 @@ let score = 0;
 let questionCounter = 0;
 let availableQuestions = [];
 
+/*Declaring random fact function*/
+var introDescription = document.querySelector('.intro-description');
+
+
 /*Declaring questions variable*/
 let questions = [{
     question: "Which popular Christmas beverage is also called 'milk punch'?",
@@ -246,7 +250,7 @@ const SCORE_POINTS = 100;
 /*Declaring questions limit*/
 const MAX_QUESTIONS = 10;
 
-/* Short comand syntax for the startGame function
+/* Short command syntax for the startGame function
     Setting start of game variables */
 
 const startGame = () => {
@@ -259,6 +263,8 @@ const startGame = () => {
 const getNewQuestion = () => {
     /* Incrementing by 1 for each question */
     questionCounter++;
+    introDescription.textContent = getRandomFact();
+    
     /* Calculating what question we are on to display 1/4,2/4, etc */
     if (availableQuestions.length === 0 || questionCounter > MAX_QUESTIONS) {
         localStorage.setItem('mostRecentScore', score);
