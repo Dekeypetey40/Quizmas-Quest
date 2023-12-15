@@ -257,13 +257,14 @@ const startGame = () => {
     questionCounter = 0;
     score = 0;
     availableQuestions = [...questions];
-    introDescription.textContent = getRandomFact();
     getNewQuestion();
 };
 /*Keeping track of score */
 const getNewQuestion = () => {
     /* Incrementing by 1 for each question */
     questionCounter++;
+    introDescription.textContent = getRandomFact();
+    
     /* Calculating what question we are on to display 1/4,2/4, etc */
     if (availableQuestions.length === 0 || questionCounter > MAX_QUESTIONS) {
         localStorage.setItem('mostRecentScore', score);
