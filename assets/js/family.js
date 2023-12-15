@@ -257,17 +257,16 @@ const startGame = () => {
 };
 /*Keeping track of score */
 const getNewQuestion = () => {
+    /* Incrementing by 1 for each question */
+    questionCounter++;
+    /* Calculating what question we are on to display 1/4,2/4, etc */
     if (availableQuestions.length === 0 || questionCounter > MAX_QUESTIONS) {
         localStorage.setItem('mostRecentScore', score);
-
+        // Redirect to the end game page
         return window.location.assign('endgame.html');
     }
-
-    /* Incrementing by 1 each question */
-    /* Calculating what question we are on to display 1/4,2/4, etc */
-    questionCounter++;
+    /* Updating the progress bar */
     progressText.innerText = `Question ${questionCounter} of ${MAX_QUESTIONS}`;
-
     progressBarFull.style.width = `${(questionCounter/MAX_QUESTIONS) * 100}%`;
     /* Calculating the value of the questionsIndex*/
 
