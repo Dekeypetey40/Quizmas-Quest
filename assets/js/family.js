@@ -246,7 +246,7 @@ const SCORE_POINTS = 100;
 /*Declaring questions limit*/
 const MAX_QUESTIONS = 10;
 
-/* Short comand syntax for the startGame function
+/* Short command syntax for the startGame function
     Setting start of game variables */
 
 const startGame = () => {
