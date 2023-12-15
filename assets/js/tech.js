@@ -13,6 +13,9 @@ let score = 0;
 let questionCounter = 0;
 let availableQuestions = [];
 
+/*Declaring random fact function*/
+var introDescription = document.querySelector('.intro-description');
+
 /*Declaring questions variable*/
 let questions = [{
     question: 'What do you call it when a bowler makes three strikes in a row',
@@ -57,19 +60,21 @@ const startGame = () => {
     questionCounter = 0;
     score = 0;
     availableQuestions = [...questions];
+    introDescription.textContent = getRandomFact();
     getNewQuestion();
 };
 /*Keeping track of score */
 const getNewQuestion = () => {
+    /* Incrementing by 1 each question */
+    questionCounter++;
     if (availableQuestions.length === 0 || questionCounter > MAX_QUESTIONS) {
         localStorage.setItem('mostRecentScore', score);
 
         return window.location.assign('endgame.html');
     }
 
-    /* Incrementing by 1 each question */
     /* Calculating what question we are on to display 1/4,2/4, etc */
-    questionCounter++;
+    
     progressText.innerText = `Question ${questionCounter} of ${MAX_QUESTIONS}`;
 
     progressBarFull.style.width = `${(questionCounter/MAX_QUESTIONS) * 100}%`;
