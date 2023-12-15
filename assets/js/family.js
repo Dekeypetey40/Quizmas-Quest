@@ -13,6 +13,10 @@ let score = 0;
 let questionCounter = 0;
 let availableQuestions = [];
 
+/*Declaring random fact function*/
+var introDescription = document.querySelector('.intro-description');
+
+
 /*Declaring questions variable*/
 let questions = [{
     question: "Which popular Christmas beverage is also called 'milk punch'?",
@@ -253,6 +257,7 @@ const startGame = () => {
     questionCounter = 0;
     score = 0;
     availableQuestions = [...questions];
+    introDescription.textContent = getRandomFact();
     getNewQuestion();
 };
 /*Keeping track of score */
