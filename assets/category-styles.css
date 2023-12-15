@@ -1,5 +1,5 @@
 :root {
-    background-color: #294D4A
+    background-color: #294D4A;
 }
 
 .container {
@@ -9,7 +9,7 @@
 }
 
 .container-family {
-    background-image: url("https://i.imgur.com/9BMMp1o.jpeg");
+    background-image: url("../assets/images/christmas_family6.webp");
 
     /* display: flex;
     justify-content: center;
@@ -19,12 +19,11 @@
 }
 
 .container-history {
-    background-image: url("https://i.imgur.com/PHJrv8G.jpeg");
-
+    background-image: url("../assets/images/christmas_history.jpeg");
 }
 
 .container-tech {
-    background-image: url("https://i.imgur.com/yPnzRwf.jpeg");
+    background-image: url("..assets/images/christmas_tech.jpeg");
 
 }
 
