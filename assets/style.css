@@ -494,6 +494,15 @@ body {
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
 }
 
+#audio-control-icon {
+  color: black;
+  font-size: 30px;
+  cursor: pointer;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+}
 
 @media screen and (max-width: 950px) {
   * {
@@ -577,6 +586,16 @@ body {
   .intro-container .intro-title {
     font-size: 38px;
   }
+}
+
+#audio-control-icon {
+  color: black;
+  font-size: 30px;
+  cursor: pointer;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
 }
 
 @media screen and (max-width: 392px) {
