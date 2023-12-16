@@ -38,7 +38,7 @@
 /* animated fact container*/
 .intro-container {
     padding: 30px;
-    background-color: inherit;
+    background-color: #0F8A5F;
     text-align: center;
     margin-bottom: 30px;
 }
@@ -71,7 +71,7 @@
 }
 
 /** Christma style for buttons **/
-.button {
+.choice-button {
     display: flex;
     box-sizing: border-box;
     justify-content: center;
@@ -106,7 +106,7 @@
     margin-bottom: 10px;
 }
 
-.button::before {
+.choice-button::before {
     content: '';
     display: block;
     position: absolute;
@@ -120,7 +120,7 @@
 
 }
 
-.button:hover {
+.choice-button:hover {
     background: #a61715;
     text-shadow: 0 1px 2px rgba(0, 0, 0, 0.75), 0 0 40px #FFF;
     box-shadow:
@@ -135,12 +135,12 @@
 
 }
 
-.button:focus {
+.choice-button:focus {
     outline: none;
     /*FF*/
 }
 
-.button:active {
+.choice-button:active {
     box-shadow:
         inset 1px 1px 0px rgba(255, 255, 255, 0.25),
         /* highlight */
