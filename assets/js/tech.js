@@ -1,28 +1,28 @@
-document.addEventListener("DOMContentLoaded", function () {  
+document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("quitButton").addEventListener("click", quit); // event listener to the "Quit Game" link
-  });
-  
-  function quit(event) {
+});
+
+function quit(event) {
     event.preventDefault();
-  
+
     // Display a Quit confirmation message
     const userResponse = confirm("Are you sure you want to quit? Click 'OK' to confirm or 'Cancel' to stay.");
-  
+
     if (userResponse) {
-      alert("You've chosen to quit. Goodbye!");
-      window.location.href = event.target.href; // Returns to the home page
+        alert("You've chosen to quit. Goodbye!");
+        window.location.href = event.target.href; // Returns to the home page
     } else {
-      alert("You've chosen to stay. Continue enjoying!");
+        alert("You've chosen to stay. Continue enjoying!");
     }
-  }
-  
+}
+
 
 const question = document.querySelector('#question');
 const choices = Array.from(document.querySelectorAll('.choice-text'));
 const progressText = document.querySelector('#progressText');
 const scoreText = document.querySelector('#score');
 const progressBarFull = document.querySelector('#progressBarFull');
-
+const restartButton = document.getElementById("restartButton");
 
 /*Declaring variebls*/
 
@@ -31,6 +31,7 @@ let acceptingAnswers = true;
 let score = 0;
 let questionCounter = 0;
 let availableQuestions = [];
+
 
 /*Declaring random fact function*/
 var introDescription = document.querySelector('.intro-description');
@@ -317,3 +318,8 @@ const incrementScore = num => {
 startGame();
 
 /* timer and score decrement based on passed time */
+
+restartButton.addEventListener('click', () => {
+    // Reset the quiz
+    startGame();
+});
