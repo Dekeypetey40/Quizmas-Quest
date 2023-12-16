@@ -23,6 +23,7 @@ const progressText = document.querySelector('#progressText');
 const scoreText = document.querySelector('#score');
 const progressBarFull = document.querySelector('#progressBarFull');
 const restartButton = document.getElementById("restartButton");
+const soundFile = new Audio('assets/sounds/magic.mp3');
 
 /*Declaring variebls*/
 
@@ -318,7 +319,9 @@ const incrementScore = num => {
 startGame();
 
 /* timer and score decrement based on passed time */
-
+restartButton.addEventListener('click', () => {
+    soundFile.play();
+});
 restartButton.addEventListener('click', () => {
     // Reset the quiz
     startGame();
