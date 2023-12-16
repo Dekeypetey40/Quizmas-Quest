@@ -249,6 +249,14 @@
     transform: translate(0.1em, 0.1em);
 }
 
+@media screen and (max-width: 600px) {
+    .home-button {
+        font-size: 3.5em;
+        padding: 3em 4em;
+    }
+}
+
+
 /* other styles */
 html,
 body {
