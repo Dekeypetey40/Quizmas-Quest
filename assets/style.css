@@ -336,6 +336,16 @@ body {
   }
 }
 
+#audio-control-icon {
+  color: black;
+  font-size: 30px;
+  cursor: pointer;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
 @media screen and (max-width: 392px) {
   * {
     font-size: 22%;
