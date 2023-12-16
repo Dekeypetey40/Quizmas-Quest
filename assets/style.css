@@ -27,7 +27,6 @@ h2 {
 
 .container {
   width: 100vw;
-  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -39,6 +38,7 @@ h2 {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  min-width: 100vw;
 }
 
 .container-category {
@@ -94,6 +94,27 @@ h2 {
   box-shadow: none;
   transform: none;
 }
+
+.quit {
+  border: 1px solid white;
+  background-color: #CC231E;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  transform: scale(1.02);
+  transform: transform 100ms;
+  text-decoration: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: 8px;
+  margin-top: 8px;
+}
+
+.quit:hover {
+  color: #C04777;
+}
+
 
 #highscore-btn {
   background: linear-gradient(90deg, #C04777, #E795BA, #EEA8C8, #FFF);
@@ -172,6 +193,9 @@ input::placeholder {
 body {
   color: #fff;
 }
+
+
+
 
 .choice-container {
   display: flex;
@@ -253,6 +277,43 @@ body {
   font-weight: bold;
 }
 
+.intro-container {
+  background-color: #cc231e;
+  padding: 20px 30px;
+  border: 1px solid #EAEAEA;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.intro-title {
+  font-family: 'Lobster', cursive;
+  font-size: 30px;
+  color: #cc231e;
+  margin-bottom: 10px;
+}
+
+.intro-description {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.intro-container:hover {
+  background-color: #34a65f;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+}
+
+#audio-control-icon {
+  color: black;
+  font-size: 30px;
+  cursor: pointer;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
 @media screen and (max-width: 950px) {
   * {
     font-size: 65%;
@@ -262,6 +323,7 @@ body {
     max-width: 90%;
     margin: 4px auto
   }
+
 
   .intro-container .intro-description {
     font-size: 23px;
