@@ -163,6 +163,10 @@ h2 {
     padding: 20px; /* Add padding for better visibility */
     border-radius: 10px; /* Add border-radius for rounded corners */
   }
+  .lobster-text{
+    font-family: 'Lobster', cursive;
+
+  }
   
   .story h1{
     color: #1ecc75;
