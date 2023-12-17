@@ -25,7 +25,7 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Logo</a>
+            <a class="navbar-brand" href="index.html">Logo</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -37,73 +37,141 @@
                         <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                     </li>
                     <li class="nav-item me-5">
-                        <a class="nav-link" href="#">History</a>
+                        <a class="nav-link" href="story.html">Story</a>
                     </li>
 
                     <li class="nav-item me-5">
-                        <a class="nav-link" href="#">Get in Touch</a>
+                        <a class="nav-link" href="contact.html">Get in Touch</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-
-
-    <main>
-        <div class="container container-contact">
-            <div id="home" class="flex-column flex-center">
-
-                <section class="contact">
-                    <div class="container-con">
-                        <h2>Let Us Get in Touch</h2>
-                        <div class="contact-wrapper">
-                            <div class="contact-form">
-                                <h3>Send us a Message</h3>
-                                <form action="#" method="post">
-                                    <div class="form-fill">
-                                        <label for="name">Name:</label>
-                                        <input type="text" id="name" name="name" required>
-
-                                        <label for="email">Email:</label>
-                                        <input type="email" id="email" name="email" required>
-
-                                        <label for="message">Message:</label>
-                                        <textarea id="message" name="message" rows="4" required></textarea>
-
-                                        <button type="submit">Send us a message</button>
-                                    </div>
-                                </form>
-                            </div>
-                            <div class="contact-info">
-                                <h3>Contact Information</h3>
-                                <p><i class="fas fa-phone"></i>+126790986</p>
-                                <p><i class="ri-mail-add-fill"></i>info@codeinstitute.com</p>
-                                <p><i class="ri-map-2-fill"></i>454 Code Institute City, Ireland</p>
-                            </div>
-                            <div class="meet-the-team">
-                                <h2>Meet the Team</h2>
-                                <div class="team-member">
-                                    <img src="team-member-1.jpg" alt="Team Member 1">
-                                    <p class="team-member-name">John Doe</p>
+    <div class="container container-contact">
+        <div id="home" class="flex-column flex-center">
+            <section class="contact">
+                <div class="container-con">
+                    <h2>Let Us Get in Touch</h2>
+                    <div class="contact-wrapper">
+                        <div class="contact-form">
+                            <h3>Send us a Message</h3>
+                            <form action="#" method="post">
+                                <div class="form-fill">
+                                    <label for="name">Your Name:</label>
+                                    <input type="text" id="name" name="name" placeholder="Your Name" required>
                                 </div>
-                                <div class="team-member">
-                                    <img src="team-member-2.jpg" alt="Team Member 2">
-                                    <p class="team-member-name">Jane Smith</p>
+                                <div class="form-fill">
+                                    <label for="email">Your Email:</label>
+                                    <input type="email" id="email" name="email" placeholder="Your Email" required>
                                 </div>
-                                <!-- Add more team members as needed -->
-                            </div>
+                                <div class="form-fill">
+                                    <label for="message">Your Message:</label>
+                                    <textarea class="form-control" rows="2" id="comment"
+                                        placeholder="Your Message"></textarea>
+                                </div>
+                                <input type="submit" value="Send " class="btn btn-play">
+                            </form>
+                        </div>
+                        <div class="contact-info">
+                            <h3>Contact Information</h3>
+                            <p><i class="fas fa-phone"></i>+126790986</p>
+                            <p><i class="fas fa-envelope"></i>info@codeinstitute.com</p>
+                            <p><i class="fas fa-address-card"></i>454 Code Institute City, Ireland</p>
                         </div>
                     </div>
-                </section>
+            </section>
+        </div>
+    </div>
+    <div class="team-area">
+        <div class="section-title">
+            <h1>Meet Hackathon Team_11</h1>
+        </div>
+        <div class="team-box">
+            <div class="box">
+                <img src="assets/images/team1.jpg" alt="team member">
+                <h2> Bogdan</h2>
+                <span>Scrum Master</span>
+                <ul>
+                    <li>
+                        <a href="https://www.linkedin.com/in/kyle-clow-43471b130" target="_blank">
+                            <i class="fa fa-linkedin"></i>
+                        </a>
+                    </li>
 
-                <div class="footer">
-                    <h1> follow us @ our Social Media flatforms</h1>
+                </ul>
+            </div>
+            <div class="box">
+                <img src="assets/images/team2.jpg " alt="team member">
+                <h2> Uju Louisa</h2>
+                <span>Member</span>
+                <ul>
+                    <li>
+                        <a href="https://www.linkedin.com/in/adimora-uju-louisa-48b821179/" target="_blank">
+                            <i class="fa fa-linkedin"></i>
+                        </a>
+                    </li>
 
-                </div>
+                </ul>
+            </div>
+            <div class="box">
+                <img src="assets/images/team4.png" alt="team member">
+                <h2> Kai</h2>
+                <span>Member</span>
+                <ul>
+                    <li>
+                        <a href="/" target="_blank">
+                            <i class="fa fa-linkedin"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="box">
+                <img src="assets/images/team2.jpg" alt="team member">
+                <h2> Kim Hanlon</h2>
+                <span>Member</span>
+                <ul>
+                    <li>
+                        <a href="/" target="_blank">
+                            <i class="fa fa-linkedin"></i>
+                        </a>
+                    </li>>
+                </ul>
+            </div>
+            <div class="box">
+                <img src="assets/images/team1.jpg" alt="team member">
+                <h2> Mohamad Ayman</h2>
+                <span>Member</span>
+                <ul>
+                    <li>
+                        <a href="/" target="_blank">
+                            <i class="fa fa-linkedin"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="box">
+                <img src="assets/images/team4.png" alt="team member">
+                <h2> Oluwaseyi Babalola</h2>
+                <span>member</span>
+                <ul>
+                    <li>
+                        <a href="/" target="_blank">
+                            <i class="fa fa-linkedin"></i>
+                        </a>
+                    </li>
+                </ul>
             </div>
         </div>
-    </main>
+
+        <div class="footer">
+            <h1>Follow us @ 
+                <a href="https://www.linkedin.com/school/code-institute/" target="_blank"><i
+                        class="fab fa-linkedin"></i></a>
+            </h1>
+            <p>&copy; 2023 December Hackathon | Designed by Team_11</p>
+        </div>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
