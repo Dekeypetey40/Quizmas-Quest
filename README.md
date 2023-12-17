@@ -128,7 +128,7 @@ The site was tested on the following browsers:
 ## Credits
  
  - Credit for blog post structure: [Bootdey](https://www.bootdey.com/snippets/view/Blog-Detail-App#html)
- - Falling star and snow animation were taken from [codepen](https://codepen.io/)
+ - Falling star and snow animation were taken from [codepen](https://codepen.io/). These code snippets were customized to suit the needs of our project and fit our stylings.
  
  
  **Thank you to all the team members for being sound. Oh, and for all the hard work and cooperation.**
