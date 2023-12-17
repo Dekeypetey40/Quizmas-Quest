@@ -25,10 +25,12 @@ h2 {
   font-size: 4.2rem;
   margin-bottom: 4rem;
 }
+
 /* General Styles applicable where needed */
 .text-white {
   color: #fff;
 }
+
 .text-
 /*--Navbar here-*/
 
@@ -41,7 +43,7 @@ h2 {
 
 #volume-slider {
   width: 150px;
-  display:none;
+  display: none;
 }
 
 
@@ -49,16 +51,20 @@ h2 {
 .navbar-nav .nav-link {
   font-size: 30px;
   color: red;
-  text-decoration: none; /* Remove default underline */
-  transition: text-decoration 0.3s ease; /* Smooth transition for the underline */
+  text-decoration: none;
+  /* Remove default underline */
+  transition: text-decoration 0.3s ease;
+  /* Smooth transition for the underline */
 }
 
 .navbar-nav .nav-link:hover {
-  text-decoration: underline; /* Add underline on hover */
+  text-decoration: underline;
+  /* Add underline on hover */
 }
 
 .navbar-nav .nav-link:active {
-  text-decoration: underline; /* Add underline on active (clicked) */
+  text-decoration: underline;
+  /* Add underline on active (clicked) */
 }
 
 
@@ -69,6 +75,7 @@ h2 {
   align-items: center;
   padding: 5rem;
 }
+
 /* for the Home page*/
 .container-home {
   background-image: url("../assets/images/backgr.jpg");
@@ -79,7 +86,7 @@ h2 {
   height: 100vh;
   display: flex;
   justify-content: space-between;
-  }
+}
 
 
 .container-endgame {
@@ -91,13 +98,14 @@ h2 {
   height: 100vh;
   display: flex;
   justify-content: center;
-  }
+}
 
 
 
 .wish,
 .play {
-  width: 60%; /* Adjust the width as needed */
+  width: 60%;
+  /* Adjust the width as needed */
   height: auto;
   margin-top: 10%;
 
@@ -110,7 +118,7 @@ h2 {
   margin-bottom: 5%;
   text-align: center;
   font-weight: 800;
-  
+
 }
 
 .wish h3 {
@@ -124,22 +132,45 @@ h2 {
   font-size: 2rem;
   color: #dcd1d1;
   text-align: center;
-  
+
 }
-.footer{
+
+/* style for footer */
+
+
+.footer-images {
+  align-items: center;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.footer-images a {
+  display: inline-block;
+  margin: 10px;
+}
+
+.footer-images img {
+  height: 30px;
+  border-radius: 30%;
+  width: 30px;
+}
+
+.footer {
   width: 100%;
   padding-top: 13%;
   background-color: transparent;
 }
+
 .footer h1 {
   font-size: 2rem;
   color: #dcd1d1;
   text-align: center;
   margin-bottom: -15%;
-  
+
 }
+
 .play {
- 
+
   padding: 10px;
   border-radius: 10px;
 }
@@ -168,30 +199,35 @@ h2 {
   min-width: 100vw;
   display: flex;
   justify-content: space-between;
-  }
-  .story {
-    width: 80%;
-    background-color: rgba(113, 109, 109, 0.8); /* Red with 70% opacity */
-    padding: 20px; /* Add padding for better visibility */
-    border-radius: 10px; /* Add border-radius for rounded corners */
-  }
-  .lobster-text{
-    font-family: 'Lobster', cursive;
+}
 
-  }
-  
-  .story h1{
-    color: #1ecc75;
-    text-align: center;
-  }
+.story {
+  width: 80%;
+  background-color: rgba(113, 109, 109, 0.8);
+  /* Red with 70% opacity */
+  padding: 20px;
+  /* Add padding for better visibility */
+  border-radius: 10px;
+  /* Add border-radius for rounded corners */
+}
 
-  .story p {
-    font-size: 1.8rem;
-    text-align: justify;
-    color: #0d0e0d;
-    font-weight: 700;
-  
-  }
+.lobster-text {
+  font-family: 'Lobster', cursive;
+
+}
+
+.story h1 {
+  color: #1ecc75;
+  text-align: center;
+}
+
+.story p {
+  font-size: 1.8rem;
+  text-align: justify;
+  color: #0d0e0d;
+  font-weight: 700;
+
+}
 
 /* for the contact page*/
 .container-contact {
@@ -202,9 +238,10 @@ h2 {
   min-width: 100vw;
   display: flex;
   justify-content: space-between;
-  position: relative; /* Make sure it's a positioned element for absolute positioning */
- }
-  
+  position: relative;
+  /* Make sure it's a positioned element for absolute positioning */
+}
+
 
 .contact {
   min-width: 100%;
@@ -216,7 +253,7 @@ h2 {
   align-items: center;
   text-align: center;
   border-radius: 10%;
-  
+
 }
 
 .container-con {
@@ -244,7 +281,8 @@ h2 {
 .contact-form h3,
 .contact-info h3 {
   font-size: 24px;
-  margin-bottom: 20px; /* Fix the typo here */
+  margin-bottom: 20px;
+  /* Fix the typo here */
   color: #00CC00;
 }
 
@@ -252,8 +290,8 @@ h2 {
   margin-bottom: 10px;
 }
 
-.form-fill input, .form-control
-.form-fill textarea{
+.form-fill input,
+.form-control .form-fill textarea {
   width: 100%;
   padding: 12px;
   border-radius: 8px;
@@ -263,8 +301,7 @@ h2 {
 }
 
 .form-fill input:focus,
-.form-fill textarea:focus 
-.form-control{
+.form-fill textarea:focus .form-control {
   outline: none;
   box-shadow: 0 0 8px #bbb;
 }
@@ -306,24 +343,27 @@ button:hover {
 
 .red-button {
   background: linear-gradient(90deg, #C04777, #E795BA, #EEA8C8, #FFF);
-  width: auto; /* Adjust the width as needed */
-  padding: 8px 16px; /* Adjust the padding for height and width */
+  width: auto;
+  /* Adjust the width as needed */
+  padding: 8px 16px;
+  /* Adjust the padding for height and width */
   /* Add any other styles you want */
   transition: background-color 0.3s ease;
 }
 
 .red-button:hover {
   background: linear-gradient(90deg, #C04777, #E795BA, #EEA8C8, #FFF);
-} 
+}
 
-@media screen and(max-width:768px){
-  .container-con{
+@media screen and(max-width:768px) {
+  .container-con {
     padding: 20px;
   }
-  .contact-wrapper{
+
+  .contact-wrapper {
     grid-template-columns: repeat(2, 1fr);
   }
-  
+
 }
 
 /* for the team member */
@@ -343,7 +383,7 @@ button:hover {
   margin-left: 10%;
   text-align: center;
   border-radius: 10%;
-  
+
 }
 
 .team-box {
@@ -420,6 +460,7 @@ button:hover {
 .box ul li a:hover .fa {
   color: #34a65f;
 }
+
 /*footer here*/
 
 .footer {
@@ -509,6 +550,7 @@ button:hover {
   border-radius: 4px;
   z-index: 2;
 }
+
 .btn-play {
   position: relative;
   background: #34a65f;
@@ -518,15 +560,25 @@ button:hover {
   margin-top: 10px;
   transition: transform 0.3s ease;
 }
+
 .btn-play:hover {
   animation: pulse 2s infinite;
 }
 
 @keyframes pulse {
-  0% { transform: scale(1); }
-  50% { transform: scale(1.1); }
-  100% { transform: scale(1); }
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
 }
+
 .sky {
   color: #fff;
   display: block;
@@ -619,21 +671,25 @@ input::placeholder {
   font-size: 2rem;
   color: #581013;
 }
+
 .fa-lightbulb {
   margin-left: 1rem;
   font-size: 2rem;
   color: #581013;
 }
+
 .fa-clock {
   margin-left: 1rem;
   font-size: 2rem;
   color: #581013;
 }
+
 .fa-people-roof {
   margin-left: 1rem;
   font-size: 2rem;
   color: #581013;
 }
+
 .fa-star {
   margin-left: 1rem;
   font-size: 2rem;
@@ -748,6 +804,7 @@ body {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
   text-align: center;
 }
+
 .homepage-container {
   background: linear-gradient(to bottom right, #581013, #ac0420);
   padding: 20px 30px;
