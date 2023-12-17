@@ -278,7 +278,7 @@ h2 {
   margin-bottom: 1rem;
   text-decoration: none;
   color: rgb(28, 26, 26);
-  background: linear-gradient(90deg, #C04777, #E795BA, #EEA8C8, #FFF);
+  background: #34a65f;
   border-radius: 4px;
   z-index: 2;
 }
@@ -341,7 +341,7 @@ h2 {
 
 
 #highscore-btn {
-  background: linear-gradient(90deg, #C04777, #E795BA, #EEA8C8, #FFF);
+  background: #34a65f;
 }
 
 #highscore-btn:hover {
