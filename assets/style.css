@@ -4,7 +4,7 @@
 
 
 :root {
-  background-color: #1F2041
+  background-color: #0f8a5f
 }
 
 * {
@@ -66,6 +66,8 @@ h2 {
   text-decoration: underline;
   /* Add underline on active (clicked) */
 }
+
+.navcolor {}
 
 
 .container {
@@ -464,8 +466,8 @@ button:hover {
 /*footer here*/
 
 .footer {
-  background-color: #fff;
-  color: #34a65f;
+  background-color: #ffffff;
+  color: #c51a1a;
   padding: 20px;
   text-align: center;
 }
@@ -710,7 +712,7 @@ input::placeholder {
 
 /* Base game styling */
 body {
-  color: #fff;
+  background-color: #34a654;
 }
 
 
