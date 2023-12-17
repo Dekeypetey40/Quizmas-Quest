@@ -288,7 +288,6 @@ h2 {
   100% { transform: scale(1); }
 }
 .sky {
-  height: 100%;
   color: #fff;
   display: block;
   z-index: 1;
