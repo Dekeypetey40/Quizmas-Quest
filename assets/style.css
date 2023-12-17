@@ -270,10 +270,22 @@ h2 {
   z-index: 2;
 }
 .btn-play {
-  background: #34A65f;
-  color:#FFF;
-  margin-top: 10px;
+  position: relative;
+  background: #34a65f;
+  padding: 10px;
   z-index: 2;
+  color: #fff;
+  margin-top: 10px;
+  transition: transform 0.3s ease;
+}
+.btn-play:hover {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
 }
 .sky {
   height: 100%;
@@ -481,6 +493,13 @@ body {
   background-color: #cc231e;
   padding: 20px 30px;
   border: 1px solid #EAEAEA;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+.homepage-container {
+  background-image: url("../assets/images/christmas_santa.jpeg");
+  padding: 20px 30px;
   border-radius: 10px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
   text-align: center;
