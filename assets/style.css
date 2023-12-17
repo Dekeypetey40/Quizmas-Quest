@@ -288,7 +288,6 @@ h2 {
   100% { transform: scale(1); }
 }
 .sky {
-  height: 100%;
   color: #fff;
   display: block;
   z-index: 1;
@@ -498,7 +497,7 @@ body {
   text-align: center;
 }
 .homepage-container {
-  background-image: url("../assets/images/christmas_santa.jpeg");
+  background: linear-gradient(to bottom right, #581013, #ac0420);
   padding: 20px 30px;
   border-radius: 10px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
