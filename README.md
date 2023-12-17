@@ -11,7 +11,7 @@ The project is deployed and can be accessed at [here](https://shore-cleanse-0fb5
 
 # ABOUT SUBMISSION
 ## Intro
-ShoreCleanse is a site designed to encourage and help users find local beach clean up events in their area. It allows users to create profiles to connect with likeminded individuals for environmental events, document their trash collection (if they're from the west west, rubbish collection for the rest of the world), and provides updated statistics on environmental facts and figuress.
+ShoreCleanse is a site designed to encourage and help users find local beach clean up events in their area. It allows users to create profiles to connect with likeminded individuals for environmental events, document their trash collection (if they're from the west west, rubbish collection for the rest of the world), and provides updated statistics on environmental facts and figures.
 
 ## Goal
 The goal of this project is to produce a functioning piece of technology that will benefit a greener tomorrow.  
@@ -27,7 +27,6 @@ Some of the most important factors of the project include:
 
 
 ## User Stories
-
 
 * As a user, I want to be able to log into the website and browse upcoming beach cleanup events so that I can sign up for any that I might be interested in.
 * As a user, I want to view photos of previous beach cleanups so that I can see the impact of the events and community involvement.
@@ -128,7 +127,8 @@ The site was tested on the following browsers:
 
 ## Credits
  
- Credit for blog post structure: [Bootdey](https://www.bootdey.com/snippets/view/Blog-Detail-App#html)
+ - Credit for blog post structure: [Bootdey](https://www.bootdey.com/snippets/view/Blog-Detail-App#html)
+ - Falling star and snow animation were taken from [codepen](https://codepen.io/)
  
  
  **Thank you to all the team members for being sound. Oh, and for all the hard work and cooperation.**
@@ -136,9 +136,9 @@ The site was tested on the following browsers:
   
  
   - **Bogdan** - [GitHub](https://github.com/KTC96), [LinkedIn](https://www.linkedin.com/in/kyle-clow-43471b130/)
-  Scrum Master/ Frontend / Documentation
+  Co-Scrum Master/ Frontend / Documentation
   - **Kai** - [GitHub](https://github.com/andrewdempsey2018), [LinkedIn](https://www.linkedin.com/in/andrew-dempsey-20ab40180/)
-  Backend/ Frontend / Documentation
+  Co-Scrum Master/Backend/ Frontend / Documentation
     - **Kim Hanlon** - [GitHub](https://github.com/kimatron), [LinkedIn](https://www.linkedin.com/in/kimhanlon291354)
    Design/ Frontend / Documentation
   - **Mohamad Ayman** - [GitHub](https://github.com/rinalds98), [LinkedIn](https://www.linkedin.com/in/rinalds-zimelis/)
