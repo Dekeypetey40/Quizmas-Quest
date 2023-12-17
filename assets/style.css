@@ -267,6 +267,19 @@ h2 {
   color: rgb(28, 26, 26);
   background: linear-gradient(90deg, #C04777, #E795BA, #EEA8C8, #FFF);
   border-radius: 4px;
+  z-index: 2;
+}
+.btn-play {
+  background: #34A65f;
+  color:#FFF;
+  margin-top: 10px;
+  z-index: 2;
+}
+.sky {
+  height: 100%;
+  color: #fff;
+  display: block;
+  z-index: 1;
 }
 
 .btn:hover {
