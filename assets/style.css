@@ -466,8 +466,8 @@ button:hover {
 /*footer here*/
 
 .footer {
-  background-color: #ffffff;
-  color: #c51a1a;
+  background-color: #294D4A;
+  color: #f5624d;
   padding: 20px;
   text-align: center;
 }
@@ -712,7 +712,7 @@ input::placeholder {
 
 /* Base game styling */
 body {
-  background-color: #fff;
+  background-color: #294D4A;
 }
 
 
