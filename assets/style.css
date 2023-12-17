@@ -24,7 +24,11 @@ h2 {
   font-size: 4.2rem;
   margin-bottom: 4rem;
 }
-
+/* General Styles applicable where needed */
+.text-white {
+  color: #fff;
+}
+.text-
 /*--Navbar here-*/
 
 
@@ -451,6 +455,7 @@ button:hover {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  height: 100vh;
 }
 
 .flex-column {
@@ -483,7 +488,7 @@ button:hover {
   margin-bottom: 1rem;
   text-decoration: none;
   color: rgb(28, 26, 26);
-  background: linear-gradient(90deg, #C04777, #E795BA, #EEA8C8, #FFF);
+  background: #34a65f;
   border-radius: 4px;
   z-index: 2;
 }
@@ -546,19 +551,11 @@ button:hover {
 
 
 #highscore-btn {
-  background: linear-gradient(90deg, #C04777, #E795BA, #EEA8C8, #FFF);
+  background: #34a65f;
 }
 
 #highscore-btn:hover {
   box-shadow: 0 0.4rem 1.4rem 0 #FFF(255, 255, 0, 0.5)
-}
-
-i.fas.fa-star,
-i.fa-solid.fa-earth-americas,
-i.fa-solid.fa-plus,
-i.fa-solid.fa-medal {
-  font-size: 2.5rem;
-  margin-left: 1rem;
 }
 
 /* Game final score */
@@ -603,7 +600,27 @@ input::placeholder {
 .fa-home {
   margin-left: 1rem;
   font-size: 2rem;
-  color: rgb(28, 26, 26);
+  color: #581013;
+}
+.fa-lightbulb {
+  margin-left: 1rem;
+  font-size: 2rem;
+  color: #581013;
+}
+.fa-clock {
+  margin-left: 1rem;
+  font-size: 2rem;
+  color: #581013;
+}
+.fa-people-roof {
+  margin-left: 1rem;
+  font-size: 2rem;
+  color: #581013;
+}
+.fa-star {
+  margin-left: 1rem;
+  font-size: 2rem;
+  color: #581013;
 }
 
 /* High score styling*/
