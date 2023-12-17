@@ -11,7 +11,7 @@ The project is deployed and can be accessed at [here](https://shore-cleanse-0fb5
 
 # ABOUT SUBMISSION
 ## Intro
-ShoreCleanse is a site designed to encourage and help users find local beach clean up events in their area. It allows users to create profiles to connect with likeminded individuals for environmental events, document their trash collection (if they're from the west west, rubbish collection for the rest of the world), and provides updated statistics on environmental facts and figures.
+ShoreCleanse is a site designed to encourage and help users find local beach clean up events in their area. It allows users to create profiles to connect with likeminded individuals for environmental events, document their trash collection (if they're from the west west, rubbish collection for the rest of the world), and provides updated statistics on environmental facts and figuress.
 
 ## Goal
 The goal of this project is to produce a functioning piece of technology that will benefit a greener tomorrow.  

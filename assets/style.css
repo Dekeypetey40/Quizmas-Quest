@@ -27,6 +27,18 @@ h2 {
 
 /*--Navbar here-*/
 
+
+/*--Volume Control-*/
+
+.volume-control {
+  margin: 10px;
+}
+
+#volume-slider {
+  width: 150px;
+}
+
+
 /* Custom styles for the navigation links */
 .navbar-nav .nav-link {
   font-size: 30px;

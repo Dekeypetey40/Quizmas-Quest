@@ -42,12 +42,14 @@
     <link rel="stylesheet" href="assets/style.css" />
   </head>
   <body>
+    
     <audio id="background-music" loop autoplay>
       <source src="./assets/audio/enchanted-chimes.mp3" type="audio/mp3" />
       Your browser does not support the audio element.
     </audio>
     <i id="audio-control-icon" class="fa fa-play"></i>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      
       <div class="container-fluid">
         <a class="navbar-brand" href="#">Logo</a>
         <button
@@ -81,6 +83,7 @@
     </nav>
 
     <main>
+      
       <div class="container container-home sky">
         <div id="home" class="flex-column flex-center">
           <section class="homepage-container text-center">
@@ -112,6 +115,14 @@
       document.addEventListener("DOMContentLoaded", function () {
         var audio = document.getElementById("background-music");
         var audioControlIcon = document.getElementById("audio-control-icon");
+        var volumeSlider = document.getElementById("volume-slider");
+
+        // Set base volume on page load
+        audio.volume = 0.05; // 50% volume
+        // Update volume when slider changes
+        volumeSlider.addEventListener("input", function() {
+          audio.volume = this.value;
+        });
 
         audioControlIcon.addEventListener("click", function () {
           if (audio.paused || audio.ended) {
