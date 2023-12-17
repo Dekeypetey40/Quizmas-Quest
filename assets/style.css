@@ -3,7 +3,15 @@
 
 
 :root {
-  background-color: #1F2041
+  background-color: #1F2041;
+  --primary-color: #C04777;
+  /* Christmas red */
+  --secondary-color: #27ae60;
+  /* Christmas green */
+  --accent-color: #f1c40f;
+  /* Christmas gold */
+  --font-color: #fff;
+  /* White for contrast */
 }
 
 * {
@@ -16,13 +24,14 @@
 
 h1 {
   font-size: 3.4rem;
-  color: #fff;
+  color: var(--accent-color);
   margin-bottom: 5rem;
 }
 
 h2 {
   font-size: 4.2rem;
   margin-bottom: 4rem;
+  color: var(--accent-color);
 }
 
 /*--Navbar here-*/
@@ -31,16 +40,20 @@ h2 {
 .navbar-nav .nav-link {
   font-size: 30px;
   color: red;
-  text-decoration: none; /* Remove default underline */
-  transition: text-decoration 0.3s ease; /* Smooth transition for the underline */
+  text-decoration: none;
+  /* Remove default underline */
+  transition: text-decoration 0.3s ease;
+  /* Smooth transition for the underline */
 }
 
 .navbar-nav .nav-link:hover {
-  text-decoration: underline; /* Add underline on hover */
+  text-decoration: underline;
+  /* Add underline on hover */
 }
 
 .navbar-nav .nav-link:active {
-  text-decoration: underline; /* Add underline on active (clicked) */
+  text-decoration: underline;
+  /* Add underline on active (clicked) */
 }
 
 
@@ -51,6 +64,7 @@ h2 {
   align-items: center;
   padding: 5rem;
 }
+
 /* for the Home page*/
 .container-home {
   background-image: url("../assets/images/backgr.jpg");
@@ -60,13 +74,14 @@ h2 {
   min-width: 100vw;
   display: flex;
   justify-content: space-between;
-  }
+}
 
 
 
 .wish,
 .play {
-  width: 60%; /* Adjust the width as needed */
+  width: 60%;
+  /* Adjust the width as needed */
   height: auto;
   margin-top: 10%;
 
@@ -79,7 +94,7 @@ h2 {
   margin-bottom: 5%;
   text-align: center;
   font-weight: 800;
-  
+
 }
 
 .wish h3 {
@@ -93,22 +108,41 @@ h2 {
   font-size: 2rem;
   color: #dcd1d1;
   text-align: center;
-  
+
 }
-.footer{
+
+/* .footer{
   width: 100%;
   padding-top: 13%;
   background-color: transparent;
+} */
+
+.footer {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: transparent;
+  color: var(--font-color);
+  text-align: center;
+  padding: 1rem 0;
+  /* border-top: 1px solid var(--accent-color); */
 }
+
 .footer h1 {
   font-size: 2rem;
   color: #dcd1d1;
   text-align: center;
   margin-bottom: -15%;
-  
+
 }
+
+body>main {
+  padding-bottom: 0rem;
+}
+
 .play {
- 
+
   padding: 10px;
   border-radius: 10px;
 }
@@ -137,28 +171,32 @@ h2 {
   min-width: 100vw;
   display: flex;
   justify-content: space-between;
-  }
-  .story {
-    width: 80%;
-    background-color: rgba(255, 0, 0, 0.3); /* Red with 70% opacity */
-    padding: 20px; /* Add padding for better visibility */
-    border-radius: 10px; /* Add border-radius for rounded corners */
-  }
-  
-  .story h1{
-    color: #1ecc75;
-    text-align: center;
-  }
+}
 
-  .story p {
-    font-size: 1.8rem;
-    text-align: justify;
-    color: #0d0e0d;
-    font-weight: 700;
-  
-  }
+.story {
+  width: 80%;
+  background-color: rgba(255, 0, 0, 0.3);
+  /* Red with 70% opacity */
+  padding: 20px;
+  /* Add padding for better visibility */
+  border-radius: 10px;
+  /* Add border-radius for rounded corners */
+}
 
- /* for the contact page*/
+.story h1 {
+  color: #1ecc75;
+  text-align: center;
+}
+
+.story p {
+  font-size: 1.8rem;
+  text-align: justify;
+  color: #0d0e0d;
+  font-weight: 700;
+
+}
+
+/* for the contact page*/
 .container-contact {
   background-image: url("../assets/images/santacoding.jpg");
   background-position: center;
@@ -177,6 +215,13 @@ h2 {
   background-color:; /* Add your desired background color here */
   padding: 50px;
   align-items: center;
+}
+
+.contact {
+  min-width: 100vh;
+  min-height: 100vh;
+  background-color: rgba(41, 232, 111, 0.7);
+  padding: 50px;
   text-align: center;
 }
 
@@ -196,6 +241,7 @@ h2 {
   gap: 30px;
   align-content: center;
   margin-left: 23%;
+  grid-gap: 30px;
 }
 
 .contact-form {
@@ -204,6 +250,7 @@ h2 {
 
 .contact-form h3,
 .contact-info h3 {
+.contact-form h3 {
   font-size: 24px;
   margin-bottom: 20px; /* Fix the typo here */
   color: #00CC00;
@@ -215,6 +262,11 @@ h2 {
 
 .form-fill input, .form-control
 .form-fill textarea{
+  margin-bottom: 20px;
+}
+
+.form-fill input,
+textarea {
   width: 100%;
   padding: 12px;
   border-radius: 8px;
@@ -414,6 +466,8 @@ button:hover {
   content: "";
 }
 
+.
+
 /* here for the Quiz*/
 .container-index {
   background-image: url("../assets/images/christmas_sant.jpeg");
@@ -459,8 +513,9 @@ button:hover {
   text-align: center;
   margin-bottom: 1rem;
   text-decoration: none;
-  color: rgb(28, 26, 26);
-  background: linear-gradient(90deg, #C04777, #E795BA, #EEA8C8, #FFF);
+  color: var(--font-color);
+  border: 1px solid var(--accent-color);
+  background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
   border-radius: 4px;
 }
 
@@ -498,13 +553,13 @@ button:hover {
 }
 
 
-#highscore-btn {
+/* #highscore-btn {
   background: linear-gradient(90deg, #C04777, #E795BA, #EEA8C8, #FFF);
 }
 
 #highscore-btn:hover {
   box-shadow: 0 0.4rem 1.4rem 0 #FFF(255, 255, 0, 0.5)
-}
+} */
 
 i.fas.fa-star,
 i.fa-solid.fa-earth-americas,
@@ -573,7 +628,9 @@ input::placeholder {
 
 /* Base game styling */
 body {
-  color: #fff;
+  color: var(--font-color);
+  background-color: var(--secondary-color);
+  font-family: 'Mountains of Christmas', cursive;
 }
 
 
@@ -686,14 +743,83 @@ body {
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
 }
 
-#audio-control-icon {
-  color: black;
-  font-size: 30px;
+/* #audio-control-icon {
+  font-size: 24px;
   cursor: pointer;
   position: fixed;
   top: 20px;
   right: 20px;
   z-index: 1000;
+  color: black;
+} */
+
+.audio-controls {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  z-index: 1000;
+  background: rgba(255, 255, 255, 0.8);
+  /* Semi-transparent background */
+  border: 1px solid var(--accent-color);
+  border-radius: 20px;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: width 0.3s ease;
+}
+
+#audio-control-icon {
+  font-size: 24px;
+  cursor: pointer;
+  color: var(--primary-color);
+  margin-right: 10px;
+}
+
+#volume-slider {
+  cursor: pointer;
+  width: 50px;
+  /* Adjust as needed */
+  -webkit-appearance: none;
+  /* Override default look */
+  appearance: none;
+  background-color: var(--secondary-color);
+  /* Christmas green */
+  height: 8px;
+  border-radius: 5px;
+  transition: width 0.3s ease;
+  opacity: 0;
+}
+
+#volume-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background: var(--accent-color);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#volume-slider::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  background: var(--accent-color);
+  /* Christmas gold */
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.audio-controls:hover #volume-slider {
+  width: 150px;
+  /* Expand to full length when hovered */
+  opacity: 1;
+  /* Show when hovered */
+}
+
+#audio-control-icon:hover,
+#volume-slider:hover {
+  transform: scale(1.1);
 }
 
 @media screen and (max-width: 950px) {
