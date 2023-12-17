@@ -58,6 +58,7 @@ h2 {
   background-repeat: no-repeat;
   background-size: cover;
   min-width: 100vw;
+  height: 100vh;
   display: flex;
   justify-content: space-between;
   }
@@ -216,10 +217,6 @@ h2 {
   color: #1ecc75;
 
 }
-  
-  
-
-.
 
 
 /* here for the Quiz*/
@@ -270,6 +267,30 @@ h2 {
   color: rgb(28, 26, 26);
   background: linear-gradient(90deg, #C04777, #E795BA, #EEA8C8, #FFF);
   border-radius: 4px;
+  z-index: 2;
+}
+.btn-play {
+  position: relative;
+  background: #34a65f;
+  padding: 10px;
+  z-index: 2;
+  color: #fff;
+  margin-top: 10px;
+  transition: transform 0.3s ease;
+}
+.btn-play:hover {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+.sky {
+  color: #fff;
+  display: block;
+  z-index: 1;
 }
 
 .btn:hover {
@@ -475,6 +496,13 @@ body {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
   text-align: center;
 }
+.homepage-container {
+  background: linear-gradient(to bottom right, #581013, #ac0420);
+  padding: 20px 30px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
 
 .intro-title {
   font-family: 'Lobster', cursive;
@@ -494,6 +522,15 @@ body {
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
 }
 
+#audio-control-icon {
+  color: black;
+  font-size: 30px;
+  cursor: pointer;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+}
 
 @media screen and (max-width: 950px) {
   * {
@@ -577,6 +614,16 @@ body {
   .intro-container .intro-title {
     font-size: 38px;
   }
+}
+
+#audio-control-icon {
+  color: black;
+  font-size: 30px;
+  cursor: pointer;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
 }
 
 @media screen and (max-width: 392px) {

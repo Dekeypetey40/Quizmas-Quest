@@ -1,79 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="Quiz application" content="Free online Quiz" />
+    <meta
+      name="Quiz, Christmas, Family, History, Tech, Free"
+      content="HTML, CSS, JavaScript"
+    />
+    <meta name="Hackathon Team-11" content="Questions" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>De funQuiz</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <!-- Favicon -->
+    <link
+      rel="shortcut icon"
+      href="/assets/images/favicon.png"
+      type="image/png"
+    />
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="Quiz application" content="Free online Quiz">
-  <meta name="Quiz, Christmas, Family, History, Tech, Free" content="HTML, CSS, JavaScript">
-  <meta name="Hackathon Team-11" content="Questions">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>De funQuiz</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <!-- Favicon -->
-  <link rel="shortcut icon" href="/assets/images/favicon.png" type="image/png">
+    <!-- Remixicons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.7.0/remixicon.css"
+    />
 
-  <!-- Remixicons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.7.0/remixicon.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
 
-  <link rel="stylesheet" href="assets/style.css">
-
-</head>
-
-<body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">Logo</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-          <li class="nav-item me-5">
-            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-          </li>
-          <li class="nav-item me-5">
-            <a class="nav-link" href="story.html">story</a>
-          </li>
-          
-          <li class="nav-item me-5">
-            <a class="nav-link" href="contact.html">Get in Touch</a>
-          </li>
-        </ul>
+    <link rel="stylesheet" href="assets/style.css" />
+  </head>
+  <body>
+    <audio id="background-music" loop autoplay>
+      <source src="./assets/audio/enchanted-chimes.mp3" type="audio/mp3" />
+      Your browser does not support the audio element.
+    </audio>
+    <i id="audio-control-icon" class="fa fa-play"></i>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Logo</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item me-5">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item me-5">
+              <a class="nav-link" href="#">History</a>
+            </li>
+            <li class="nav-item me-5">
+              <a class="nav-link" href="#">Quiz</a>
+            </li>
+            <li class="nav-item me-5">
+              <a class="nav-link" href="#">Get in Touch</a>
+            </li>
+          </ul>
+        </div>
       </div>
+    </nav>
+
+    <main>
+      <div class="container container-home sky">
+        <div id="home" class="flex-column flex-center">
+          <section class="homepage-container text-center">
+            <h1> Merry Christmas!</h1>
+            <h3> This season is time for celebration and reconciliation</h3>
+            <a href="categories.html" class="btn btn-play">Play</a>
+          </section>
+          <div class="wish">
+            
+          </div>
+  
+  
+          <div class="footer">
+            <h1> Follow us @ our Social Media platforms</h1>
+          </div>
+        </div>
+      </div>
+    </main>
+  
+  
+  
+  
     </div>
-  </nav>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/27cbf33ba8.js" crossorigin="anonymous"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var audio = document.getElementById("background-music");
+        var audioControlIcon = document.getElementById("audio-control-icon");
 
-
-
-  <main>
-    <div class="container container-home">
-      <div id="home" class="flex-column flex-center">
-        <div class="wish">
-          <h1> Merry Christmas</h1>
-          <h3> This season is time for celebration and reconciation</h3>
-          <h4>let's play the Game</h4>
-          <a href="quiz.html" class="btn">Play</a>
-        </div>
-
-
-        <div class="footer">
-          <h1> follow us @ our Social Media flatforms</h1>
-
-        </div>
-      </div>
-  </main>
-
-
-
-
-  </div>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous"></script>
-  <script src="https://kit.fontawesome.com/27cbf33ba8.js" crossorigin="anonymous"></script>
-</body>
-
+        audioControlIcon.addEventListener("click", function () {
+          if (audio.paused || audio.ended) {
+            audio
+              .play()
+              .then(() => {
+                audioControlIcon.className = "fa fa-volume-up";
+              })
+              .catch((error) => {
+                console.log("Play was blocked.");
+              });
+          } else if (!audio.muted) {
+            audio.muted = true;
+            audioControlIcon.className = "fa fa-volume-mute";
+          } else {
+            audio.muted = false;
+            audioControlIcon.className = "fa fa-volume-up";
+          }
+        });
+      });
+    </script>
+    <script src="assets/js/snow-effect.js"></script>
+  </body>
 </html>
