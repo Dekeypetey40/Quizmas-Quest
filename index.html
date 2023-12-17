@@ -46,7 +46,18 @@
       <source src="./assets/audio/enchanted-chimes.mp3" type="audio/mp3" />
       Your browser does not support the audio element.
     </audio>
-    <i id="audio-control-icon" class="fa fa-play"></i>
+    <!-- <i id="audio-control-icon" class="fa fa-play"></i> -->
+    <div class="audio-controls">
+      <i id="audio-control-icon" class="fa fa-volume-up"></i>
+      <input
+        type="range"
+        id="volume-slider"
+        min="0"
+        max="1"
+        step="0.01"
+        value="1"
+      />
+    </div>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">Logo</a>
@@ -97,6 +108,48 @@
             class="btn"
             >High Scores<i class="fas fa-star"></i
           ></a>
+          <button
+            class="btn"
+            data-bs-toggle="modal"
+            data-bs-target="#rulesModal"
+          >
+            Game Rules
+          </button>
+        </div>
+      </div>
+      <!-- Modal for game rules -->
+      <div
+        class="modal fade"
+        id="rulesModal"
+        tabindex="-1"
+        aria-labelledby="rulesModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="rulesModalLabel">Game Rules</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <!-- Add your game rules text here -->
+              <p>High score rules</p>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </main>
@@ -113,26 +166,27 @@
       document.addEventListener("DOMContentLoaded", function () {
         var audio = document.getElementById("background-music");
         var audioControlIcon = document.getElementById("audio-control-icon");
+        var volumeSlider = document.getElementById("volume-slider");
 
+        // Mute/unmute on icon click
         audioControlIcon.addEventListener("click", function () {
-          if (audio.paused || audio.ended) {
-            audio
-              .play()
-              .then(() => {
-                audioControlIcon.className = "fa fa-volume-up";
-              })
-              .catch((error) => {
-                console.log("Play was blocked.");
-              });
-          } else if (!audio.muted) {
-            audio.muted = true;
-            audioControlIcon.className = "fa fa-volume-mute";
-          } else {
-            audio.muted = false;
-            audioControlIcon.className = "fa fa-volume-up";
-          }
+          audio.muted = !audio.muted;
+          audioControlIcon.className = audio.muted
+            ? "fa fa-volume-mute"
+            : "fa fa-volume-up";
+          volumeSlider.value = audio.muted ? 0 : audio.volume;
+        });
+
+        // Adjust volume on slider change
+        volumeSlider.addEventListener("input", function () {
+          audio.volume = this.value;
+          audio.muted = audio.volume === 0;
+          audioControlIcon.className = audio.muted
+            ? "fa fa-volume-mute"
+            : "fa fa-volume-up";
         });
       });
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

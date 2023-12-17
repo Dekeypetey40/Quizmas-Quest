@@ -3,7 +3,15 @@
 
 
 :root {
-  background-color: #1F2041
+  background-color: #1F2041;
+  --primary-color: #C04777;
+  /* Christmas red */
+  --secondary-color: #27ae60;
+  /* Christmas green */
+  --accent-color: #f1c40f;
+  /* Christmas gold */
+  --font-color: #fff;
+  /* White for contrast */
 }
 
 * {
@@ -16,13 +24,14 @@
 
 h1 {
   font-size: 3.4rem;
-  color: #fff;
+  color: var(--accent-color);
   margin-bottom: 5rem;
 }
 
 h2 {
   font-size: 4.2rem;
   margin-bottom: 4rem;
+  color: var(--accent-color);
 }
 
 .container {
@@ -77,8 +86,9 @@ h2 {
   text-align: center;
   margin-bottom: 1rem;
   text-decoration: none;
-  color: rgb(28, 26, 26);
-  background: linear-gradient(90deg, #C04777, #E795BA, #EEA8C8, #FFF);
+  color: var(--font-color);
+  border: 1px solid var(--accent-color);
+  background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
   border-radius: 4px;
 }
 
@@ -116,13 +126,13 @@ h2 {
 }
 
 
-#highscore-btn {
+/* #highscore-btn {
   background: linear-gradient(90deg, #C04777, #E795BA, #EEA8C8, #FFF);
 }
 
 #highscore-btn:hover {
   box-shadow: 0 0.4rem 1.4rem 0 #FFF(255, 255, 0, 0.5)
-}
+} */
 
 i.fas.fa-star,
 i.fa-solid.fa-earth-americas,
@@ -191,7 +201,9 @@ input::placeholder {
 
 /* Base game styling */
 body {
-  color: #fff;
+  color: var(--font-color);
+  background-color: var(--secondary-color);
+  font-family: 'Mountains of Christmas', cursive;
 }
 
 
@@ -304,14 +316,83 @@ body {
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
 }
 
-#audio-control-icon {
-  color: black;
-  font-size: 30px;
+/* #audio-control-icon {
+  font-size: 24px;
   cursor: pointer;
   position: fixed;
   top: 20px;
   right: 20px;
   z-index: 1000;
+  color: black;
+} */
+
+.audio-controls {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  z-index: 1000;
+  background: rgba(255, 255, 255, 0.8);
+  /* Semi-transparent background */
+  border: 1px solid var(--accent-color);
+  border-radius: 20px;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: width 0.3s ease;
+}
+
+#audio-control-icon {
+  font-size: 24px;
+  cursor: pointer;
+  color: var(--primary-color);
+  margin-right: 10px;
+}
+
+#volume-slider {
+  cursor: pointer;
+  width: 50px;
+  /* Adjust as needed */
+  -webkit-appearance: none;
+  /* Override default look */
+  appearance: none;
+  background-color: var(--secondary-color);
+  /* Christmas green */
+  height: 8px;
+  border-radius: 5px;
+  transition: width 0.3s ease;
+  opacity: 0;
+}
+
+#volume-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background: var(--accent-color);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#volume-slider::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  background: var(--accent-color);
+  /* Christmas gold */
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.audio-controls:hover #volume-slider {
+  width: 150px;
+  /* Expand to full length when hovered */
+  opacity: 1;
+  /* Show when hovered */
+}
+
+#audio-control-icon:hover,
+#volume-slider:hover {
+  transform: scale(1.1);
 }
 
 @media screen and (max-width: 950px) {
