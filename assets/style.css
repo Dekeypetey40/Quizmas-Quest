@@ -336,6 +336,7 @@ button:hover {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  height: 100%;
 }
 
 .box {
@@ -596,6 +597,7 @@ input::placeholder {
   margin-bottom: 3rem;
   width: 100%;
   outline: none;
+  color: black;
 }
 
 #end-text {
