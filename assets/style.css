@@ -170,20 +170,6 @@ h2 {
   border-radius: 10px;
 }
 
-/* Responsive styles for smaller screens */
-@media (max-width: 768px) {
-  .container-home {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .wish,
-  .play {
-    width: 100%;
-    margin-bottom: 20px;
-  }
-}
-
 /* for the story page*/
 .container-story {
   background-image: url("../assets/images/santacoding.jpg");
@@ -287,7 +273,6 @@ h2 {
   color: #00CC00;
   text-align: center;
   font-weight: 800;
-  margin-top: ;
 }
 .story-textp{
   font-size: 1.2rem;
@@ -436,17 +421,6 @@ button:hover {
 
 .red-button:hover {
   background: linear-gradient(90deg, #C04777, #E795BA, #EEA8C8, #FFF);
-}
-
-@media screen and(max-width:768px) {
-  .container-con {
-    padding: 20px;
-  }
-
-  .contact-wrapper {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
 }
 
 /* for the team member */
@@ -599,6 +573,7 @@ button:hover {
 .flex-column {
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
 .flex-center {
@@ -918,6 +893,89 @@ body {
   z-index: 1000;
 }
 
+#audio-control-icon {
+  color: black;
+  font-size: 30px;
+  cursor: pointer;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+  .container-home {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .wish,
+  .play {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+/* Contact media queries */
+@media screen and(max-width:768px) {
+  .container-con {
+    padding: 20px;
+  }
+
+  .contact-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+@media screen and (max-width: 392px) {
+  * {
+    font-size: 22%;
+  }
+
+  #hud-lg {
+    display: none;
+  }
+
+  #hud-sm {
+    width: 100%;
+    display: block;
+    position: relative;
+  }
+
+  .category {
+    margin-left: 5%;
+    margin-bottom: 20px;
+  }
+
+  .hud-main-category {
+    margin-left: 35px;
+    line-height: 25px;
+  }
+
+  .hud-wrapper {
+    width: 100%;
+    overflow: auto;
+
+  }
+
+  .left {
+    float: left;
+    margin-left: 40px;
+  }
+
+  .right {
+    float: right;
+    margin-right: 40px;
+  }
+
+  .intro-container .intro-title {
+    font-size: 30px;
+  }
+
+  .intro-container .intro-description {
+    font-size: 14px;
+  }
+}
 @media screen and (max-width: 950px) {
   * {
     font-size: 65%;
@@ -999,65 +1057,5 @@ body {
 
   .intro-container .intro-title {
     font-size: 38px;
-  }
-}
-
-#audio-control-icon {
-  color: black;
-  font-size: 30px;
-  cursor: pointer;
-  position: fixed;
-  top: 20px;
-  right: 20px;
-  z-index: 1000;
-}
-
-@media screen and (max-width: 392px) {
-  * {
-    font-size: 22%;
-  }
-
-  #hud-lg {
-    display: none;
-  }
-
-  #hud-sm {
-    width: 100%;
-    display: block;
-    position: relative;
-  }
-
-  .category {
-    margin-left: 5%;
-    margin-bottom: 20px;
-  }
-
-  .hud-main-category {
-    margin-left: 35px;
-    line-height: 25px;
-  }
-
-  .hud-wrapper {
-    width: 100%;
-    overflow: auto;
-
-  }
-
-  .left {
-    float: left;
-    margin-left: 40px;
-  }
-
-  .right {
-    float: right;
-    margin-right: 40px;
-  }
-
-  .intro-container .intro-title {
-    font-size: 30px;
-  }
-
-  .intro-container .intro-description {
-    font-size: 14px;
   }
 }
