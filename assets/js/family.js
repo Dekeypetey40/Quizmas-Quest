@@ -3,45 +3,46 @@ const choices = Array.from(document.querySelectorAll('.choice-text'));
 const progressText = document.querySelector('#progressText');
 const scoreText = document.querySelector('#score');
 const progressBarFull = document.querySelector('#progressBarFull');
+const soundFile = new Audio('assets/sounds/magic.mp3');
 
 /* Quit confirmation for user */
 document.addEventListener("DOMContentLoaded", function () {  
-    document.getElementById("quitButton").addEventListener("click", quit); // event listener to the "Quit Game" link
-  });
-  
-  function quit(event) {
+    document.getElementById("quitButton").addEventListener("click", confirmQuit); // event listener to the "Quit Game" link
+});
+
+function confirmQuit(event) {
     event.preventDefault();
-  
+
     // Display a Quit confirmation message
     const userResponse = confirm("Are you sure you want to quit? Click 'OK' to confirm or 'Cancel' to stay.");
-  
+
     if (userResponse) {
-      alert("You've chosen to quit. Goodbye!");
-      window.location.href = event.target.href; // Returns to the home page
+        alert("You've chosen to quit. Goodbye!");
+        window.location.href = event.target.href; // Returns to the home page
     } else {
-      alert("You've chosen to stay. Continue enjoying!");
+        alert("You've chosen to stay. Continue enjoying!");
     }
-  }
-  /* Restart Confirmation for User */
-  document.addEventListener("DOMContentLoaded", function () {  
-    document.getElementById("restartButton").addEventListener("click", quit); // event listener to the "Quit Game" link
-  });
-  
-  function quit(event) {
+}
+
+/* Restart Confirmation for User */
+document.addEventListener("DOMContentLoaded", function () {  
+    document.getElementById("restartButton").addEventListener("click", confirmRestart); // event listener to the "Restart Game" link
+});
+
+function confirmRestart(event) {
     event.preventDefault();
-  
-    // Display a Quit confirmation message
+
+    // Display a Restart confirmation message
     const userResponse = confirm("Are you sure you want to restart the quiz? Click 'OK' to restart or 'Cancel' to keep playing.");
-  
+
     if (userResponse) {
-      alert("Reloading!");
-      soundFile.play();
-      location.reload();; // Reloads the page
-      
+        alert("Reloading!");
+        location.reload(); // Reloads the page
+        soundFile.play();
     } else {
-      alert("You've chosen to stay. Go get em' tiger!");
+        alert("You've chosen to stay. Go get em' tiger!");
     }
-  }
+}
 
 
 /*Declaring variebls*/
