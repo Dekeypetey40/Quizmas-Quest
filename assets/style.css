@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Nova+Square&display=swap');
+@import 'https://fonts.googleapis.com/css?family=Mountains+of+Christmas';
 @import url('https://fonts.googleapis.com/css2?family=Gwendolyn:wght@400;700&family=Montserrat:ital,wght@0,400;0,600;0,700;1,400&display=swap');
 
 
@@ -11,7 +12,7 @@
   margin: 0;
   padding: 0;
   font-size: 75%;
-  font-family: 'Nova Square', cursive;
+  font-family: 'Mountains of Christmas';
 }
 
 h1 {
@@ -77,6 +78,18 @@ h2 {
   height: 100vh;
   display: flex;
   justify-content: space-between;
+  }
+
+
+.container-endgame {
+  background-image: url("../assets/images/stars.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
   }
 
 .wish,
@@ -155,6 +168,10 @@ h2 {
     background-color: rgba(113, 109, 109, 0.8); /* Red with 70% opacity */
     padding: 20px; /* Add padding for better visibility */
     border-radius: 10px; /* Add border-radius for rounded corners */
+  }
+  .lobster-text{
+    font-family: 'Lobster', cursive;
+
   }
   
   .story h1{
