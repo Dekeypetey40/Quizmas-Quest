@@ -201,6 +201,7 @@ choices.forEach(choice => {
         /* everytime we are clicking right or wrong */
         setTimeout(() => {
             selectedChoice.parentElement.classList.remove(classToApply);
+            
             /*will get us the next question*/
             getNewQuestion();
         }, 1000);
