@@ -54,6 +54,7 @@ View the live site
 
 * As a future enhancement, the contact form will notify the user that their email was successfully submitted to the team's email account.
 * There would be dedicated Twitter, youtube, and Facebook handle dedicated to 'Team_11'
+* Have a good readme
 
 ## Design 
 
