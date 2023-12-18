@@ -8,24 +8,6 @@
     background-size: cover;
 }
 
-.container-family {
-    background-image: url("../assets/images/christmas_family6.webp");
-
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
-    /* max-width: 80rem; */
-    /* margin: 0 auto; */
-}
-
-.container-history {
-    background-image: url("../assets/images/christmas_history.jpeg");
-}
-
-.container-tech {
-    background-image: url("..assets/images/christmas_tech.jpeg");
-
-}
 
 
 .geo-hud,
