@@ -17,89 +17,43 @@ The 'Story page features a few paragraphs of text about ancient hist of Chrimas 
 
 
 View the live site
- [here](https://).
+ [here](https://dekeypetey40.github.io/Quizmas-Quest/).
 
-![Mockup](picture of the site)
+![Mockup](assets/images/responsive-stuff.png)
 
 ## Features 
 
 ### Site wide
-#### Navigation Menu
-*	The Logo, which serves as a link to the index page, as well as named links to the home page,  Story, and Get in touch pages, and is responsive at 320px, 600px, and 50em. 1024px
-*	This will allow users to easily navigate between the pages within the site on these sizes devices.
-
-
-![Nav Menu](assets/)
-
-#### Hamburger Icon
-* At 991 pixel width or below, the navbar will turn into a drop down menu which also features a drop down toggle.
-
-![Nav toggle](assets/)
-
-
-#### Footer
-*	This  contain icons as links to social media websites that will open in new tabs. Icons will be accessible to the visually impaired who may be using a screen reader, by the use of aria labels. 
-
-![Footer](assets/)
-
-
 
 ### Landing Page
 * This page features  welcoming the user to the website.
 * At the bottom of the page, there is a link to the our socialmedia platorm and a buttion to Play the quiz.
-![Landing Page Image](assets/)
+![Landing Page Image](assets/images/index-quiz.png)
 
 ### Categories of Quiz section
 * This page features the categories of Quiz to chose from . 
-![Categores section ](assets/images/)
+![Categores section ](assets/images/category-quiz.png)
 * Here the user will type of quiz to play.
 
 
 
-![Family Quiz section](assets/images/)
+![Game Quiz section](assets/images/game-quiz.png)
 
-* This is quiz that features.......
 
-![Tech quiz section](assets/images/)
-* This is quiz that features.......
-
-![Tech quiz section](assets/images)
-* This is quiz that features.......
-
-![Scores section](assets/images)
-* This is.......
-
-###  Story Page
-
-* The Story page features text about Ancient history Christmas tree.
-
-![Story page](assets/images/readme-images/history-page.png)
-
-* It also features three youtube links via iFrames to allow the user to see the christmas films and the music series.
-
-![Movie videos](assets/images/)
+![Scores section](assets/images/leader-quiz.png)
+![End section](assets/images/endgame-quiz.png)
 
 ### Get in touch page
-*	This contact form is implemented to allow users to contact 'Team_11' 
+*	This contact form is implemented to allow users to contact 'Tech the Halls' 
 *	Username (is a must;  if a user did not input their name, the system will warn that the name must be written)
 *	Email (is a must; if the user did not input their email, or input some text without "@", the user will be notified.)
 
-![Contact us page](assets/images/)
-
-* On a successful submission of the contact form, the user will be navigated to Thank.html displaying a thank you message, and will provide a link back to the  site.
-
-![Thank You message](assets/images/)
-
-* The contact page also features links to the Team_11' LinkedIn Profiles.
-
-![Team M3mbers](assets/images/)
-
+![Contact us page](assets/images/contact.png)
 
 ### Features Left to Implement
 
 * As a future enhancement, the contact form will notify the user that their email was successfully submitted to the team's email account.
 * There would be dedicated Twitter, youtube, and Facebook handle dedicated to 'Team_11'
-* There will ....
 
 ## Design 
 
