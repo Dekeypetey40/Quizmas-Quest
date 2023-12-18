@@ -67,9 +67,6 @@ h2 {
   /* Add underline on active (clicked) */
 }
 
-.navcolor {}
-
-
 .container {
   width: 100vw;
   display: flex;
@@ -102,15 +99,12 @@ h2 {
   justify-content: center;
 }
 
-
-
 .wish,
 .play {
   width: 60%;
   /* Adjust the width as needed */
   height: auto;
   margin-top: 10%;
-
 }
 
 /* Adjust styles for better visual separation */
@@ -120,7 +114,6 @@ h2 {
   margin-bottom: 5%;
   text-align: center;
   font-weight: 800;
-
 }
 
 .wish h3 {
@@ -191,7 +184,6 @@ h2 {
   }
 }
 
-
 /* for the story page*/
 .container-story {
   background-image: url("../assets/images/santacoding.jpg");
@@ -229,6 +221,54 @@ h2 {
   color: #0d0e0d;
   font-weight: 700;
 
+}
+  .story p {
+    font-size: 1.8rem;
+    text-align: justify;
+    color: #0d0e0d;
+    font-weight: 700;
+  
+  }
+  .video-container{
+    width: 80%;
+    background-color: rgba(113, 109, 109, 0.2); /* Red with 70% opacity */
+    padding: 20px; /* Add padding for better visibility */
+    border-radius: 10px; /* Add border-radius for rounded corners */
+    margin-right:  5%;
+  }
+
+  .padding{
+    padding: 1rem;
+  }
+
+  .story-text{
+    color: #1ecc75;
+    text-align: center;
+    font-size: 2rem;
+  }
+
+  .story-textp{
+    color: #1ecc75;
+    text-align: center;
+    font-size: 1rem;
+    font-style: italic;
+    margin-top: -5%;
+
+  }
+
+  /* Add this CSS to your stylesheet */
+.video-thumbnail {
+  border: 5px solid green; /* Adjust the width and color as needed */
+  border-radius: 20px; /* Optional: Add border radius for a rounded look */
+  overflow: hidden; /* Ensure the border does not affect the size of the iframe */
+
+}
+
+.video-label {
+  margin-top: 10px; /* Add some space between the video and its label */
+  font-size: 1rem;
+  margin-left: 2.5rem;
+  color: #00CC00;
 }
 
 /* for the contact page*/
@@ -321,7 +361,6 @@ button:hover {
   background-color: #34a654;
 }
 
-
 .contact-info {
   text-align: left;
 }
@@ -331,7 +370,6 @@ button:hover {
   margin-bottom: 20px;
   color: #1ecc75;
 }
-
 .contact-info p {
   font-size: 24px;
   margin-bottom: 10px;
@@ -385,7 +423,6 @@ button:hover {
   margin-left: 10%;
   text-align: center;
   border-radius: 10%;
-
 }
 
 .team-box {
@@ -432,11 +469,9 @@ button:hover {
   font-style: italic;
   margin-bottom: 25px;
 }
-
 .box ul {
   padding: 0;
 }
-
 .box ul li {
   display: inline-block;
   list-style: none;
@@ -714,9 +749,6 @@ input::placeholder {
 body {
   background-color: #294D4A;
 }
-
-
-
 
 .choice-container {
   display: flex;
