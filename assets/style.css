@@ -170,27 +170,6 @@ h2 {
   border-radius: 10px;
 }
 
-/* for the story page*/
-.container-story {
-  background-image: url("../assets/images/santacoding.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  min-width: 100vw;
-  display: flex;
-  justify-content: space-between;
-}
-
-.story {
-  width: 80%;
-  background-color: rgba(113, 109, 109, 0.8);
-  /* Red with 70% opacity */
-  padding: 20px;
-  /* Add padding for better visibility */
-  border-radius: 10px;
-  /* Add border-radius for rounded corners */
-}
-
 .lobster-text {
   font-family: 'Lobster', cursive;
 
@@ -200,21 +179,6 @@ h2 {
   color: #1ecc75;
   text-align: center;
 }
-
-.story p {
-  font-size: 1.8rem;
-  text-align: justify;
-  color: #0d0e0d;
-  font-weight: 700;
-
-}
-  .story p {
-    font-size: 1.8rem;
-    text-align: justify;
-    color: #0d0e0d;
-    font-weight: 700;
-  
-  }
   .video-container{
     width: 80%;
     background-color: rgba(113, 109, 109, 0.2); /* Red with 70% opacity */
@@ -227,78 +191,12 @@ h2 {
     padding: 1rem;
   }
 
-  .story-text{
-    color: #1ecc75;
-    text-align: center;
-    font-size: 2rem;
-  }
 
-  .story-textp{
-    color: #1ecc75;
-    text-align: center;
-    font-size: 1rem;
-    font-style: italic;
-    margin-top: -5%;
-
-  }
-  .story-container{
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-    width: 80%;
-    min-height: 30%;
-    border-radius: 16%;
-    background-color: rgba(113, 109, 109, 0.8);
-    margin-top: 5%;
-    margin-left: 14%;
-  
-  
-  }
-
-
-.video-label {
-  margin-top: 10px; /* Add some space between the video and its label */
-  font-size: 1rem;
-  margin-left: 2.5rem;
-  color: #6c0505;
-  font-weight: 600;
-}
 
 .padding{
   padding: 1px;
   
 }
-.story-text{
-  font-size: 3rem;
-  color: #00CC00;
-  text-align: center;
-  font-weight: 800;
-}
-.story-textp{
-  font-size: 1.2rem;
-  color: #6c0505;
-  text-align: center;
-  margin-top: -5%;
-  font-weight: 600;
-}
-
-
-
-  /* Add this CSS to your stylesheet */
-.video-thumbnail {
-  border: 5px solid green; /* Adjust the width and color as needed */
-  border-radius: 20px; /* Optional: Add border radius for a rounded look */
-  overflow: hidden; /* Ensure the border does not affect the size of the iframe */
-
-}
-
-.video-label {
-  margin-top: 10px; /* Add some space between the video and its label */
-  font-size: 1rem;
-  margin-left: 2.5rem;
-  color: #00CC00;
-}
-
 /* for the contact page*/
 .container-contact {
   background-image: url("../assets/images/santacoding.jpg");
