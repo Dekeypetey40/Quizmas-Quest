@@ -23,160 +23,122 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">Logo</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item me-5">
-                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item me-5">
-                        <a class="nav-link" href="story.html">Story</a>
-                    </li>
+    <div class="contact-container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">Logo</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item me-5">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item me-5">
+                            <a class="nav-link" href="contact.html">Get in Touch</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="team-area">
+            <div class="section-title">
+                <h1>Meet Hackathon Team_11</h1>
+            </div>
+            <div class="team-box">
+                <div class="box">
+                    <img src="assets/images/kai.jpg" alt="team member">
+                    <h2 class="contact-text lobster-text"> Kai</h2>
+                    <span class="lobster-text">Scrum Master</span>
 
-                    <li class="nav-item me-5">
-                        <a class="nav-link" href="contact.html">Get in Touch</a>
-                    </li>
-                </ul>
+                    <ul>
+                        <li>
+                            <a href="/" target="_blank">
+                                <i class="fa fa-linkedin"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="box">
+                    <img src="assets/images/bogdan.jpg" alt="team member">
+                    <h2 class="contact-text lobster-text"> Bogdan</h2>
+                    <span class="lobster-text">Scrum Master</span>
+                    <ul>
+                        <li>
+                            <a href="https://www.linkedin.com/in/kyle-clow-43471b130" target="_blank">
+                                <i class="fa fa-linkedin"></i>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="box">
+                    <img src="assets/images/uju.png " alt="team member">
+                    <h2 class="contact-text lobster-text"> Uju Louisa</h2>
+                    <span class="lobster-text">Member</span>
+                    <ul>
+                        <li>
+                            <a href="https://www.linkedin.com/in/adimora-uju-louisa-48b821179/" target="_blank">
+                                <i class="fa fa-linkedin"></i>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="box">
+                    <img src="assets/images/kimmyl.jpg" alt="team member">
+                    <h2 class="contact-text lobster-text"> Kim Hanlon</h2>
+                    <span class="lobster-text">Member</span>
+                    <ul>
+                        <li>
+                            <a href="/" target="_blank">
+                                <i class="fa fa-linkedin"></i>
+                            </a>
+                        </li>>
+                    </ul>
+                </div>
+                <div class="box">
+                    <img src="assets/images/mohammed.jpg" alt="team member">
+                    <h2 class="contact-text lobster-text"> Mohamad Ayman</h2>
+                    <span class="lobster-text">Member</span>
+                    <ul>
+                        <li>
+                            <a href="/" target="_blank">
+                                <i class="fa fa-linkedin"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="box">
+                    <img src="assets/images/james.jpg" alt="team member">
+                    <h2 class="contact-text lobster-text"> Oluwaseyi Babalola</h2>
+                    <span class="lobster-text">Member</span>
+                    <ul>
+                        <li>
+                            <a href="/" target="_blank">
+                                <i class="fa fa-linkedin"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer contact-footer">
+                <h1 class="lobster-text">Follow us @
+                    <a href="https://www.linkedin.com/school/code-institute/" target="_blank"><i
+                            class="fab fa-linkedin"></i></a>
+                </h1>
+                <p class="lobster-text">&copy; 2023 December Hackathon | Designed by Team_11</p>
             </div>
         </div>
-    </nav>
-
-    <div class="container container-contact">
-        <div id="home" class="flex-column flex-center">
-            <section class="contact">
-                <div class="container-con">
-                    <h2 class="lobster-text">Let Us Get in Touch</h2>
-                    <div class="contact-wrapper">
-                        <div class="contact-form">
-                            <h3 class="lobster-text">Send us a Message</h3>
-                            <form action="https://formspree.io/f/mqkvyjbw" method="POST">
-                                <div class="form-fill">
-                                    <label for="name">Your Name:</label>
-                                    <input type="text" id="name" name="name" placeholder="Your Name" required>
-                                </div>
-                                <div class="form-fill">
-                                    <label for="email">Your Email:</label>
-                                    <input type="email" id="email" name="email" placeholder="Your Email" required>
-                                </div>
-                                <div class="form-fill">
-                                    <label for="message">Your Message:</label>
-                                    <textarea class="form-control" rows="3" id="comment"
-                                        placeholder="Your Message"></textarea>
-                                </div>
-                                <input type="submit" value="Send " class="btn btn-play">
-                            </form>
-                        </div>
-                        <div class="contact-info">
-                            <h3 class="lobster-text">Contact Information</h3>
-                            <p class="lobster-text"><i class="fas fa-phone"></i>+126790986</p>
-                            <p class="lobster-text"><i class="fas fa-envelope"></i>info@codeinstitute.com</p>
-                            <p class="lobster-text"><i class="fas fa-address-card"></i>454 Code Institute City, Ireland</p>
-                        </div>
-                    </div>
-            </section>
-        </div>
-    </div>
-    <div class="team-area">
-        <div class="section-title">
-            <h1>Meet Hackathon Team_11</h1>
-        </div>
-        <div class="team-box">
-            <div class="box">
-                <img src="assets/images/team1.jpg" alt="team member">
-                <h2 class="lobster-text"> Bogdan</h2>
-                <span class="lobster-text">Scrum Master</span>
-                <ul>
-                    <li>
-                        <a href="https://www.linkedin.com/in/kyle-clow-43471b130" target="_blank">
-                            <i class="fa fa-linkedin"></i>
-                        </a>
-                    </li>
-
-                </ul>
-            </div>
-            <div class="box">
-                <img src="assets/images/team2.jpg " alt="team member">
-                <h2 class="lobster-text"> Uju Louisa</h2>
-                <span class="lobster-text">Member</span>
-                <ul>
-                    <li>
-                        <a href="https://www.linkedin.com/in/adimora-uju-louisa-48b821179/" target="_blank">
-                            <i class="fa fa-linkedin"></i>
-                        </a>
-                    </li>
-
-                </ul>
-            </div>
-            <div class="box">
-                <img src="assets/images/team4.png" alt="team member">
-                <h2 class="lobster-text"> Kai</h2>
-                <span class="lobster-text">Scrum Master</span>
-
-                <ul>
-                    <li>
-                        <a href="/" target="_blank">
-                            <i class="fa fa-linkedin"></i>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="box">
-                <img src="assets/images/team2.jpg" alt="team member">
-                <h2 class="lobster-text"> Kim Hanlon</h2>
-                <span class="lobster-text">Member</span>
-                <ul>
-                    <li>
-                        <a href="/" target="_blank">
-                            <i class="fa fa-linkedin"></i>
-                        </a>
-                    </li>>
-                </ul>
-            </div>
-            <div class="box">
-                <img src="assets/images/team1.jpg" alt="team member">
-                <h2 class="lobster-text"> Mohamad Ayman</h2>
-                <span class="lobster-text">Member</span>
-                <ul>
-                    <li>
-                        <a href="/" target="_blank">
-                            <i class="fa fa-linkedin"></i>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="box">
-                <img src="assets/images/team4.png" alt="team member">
-                <h2 class="lobster-text"> Oluwaseyi Babalola</h2>
-                <span class="lobster-text">member</span>
-                <ul>
-                    <li>
-                        <a href="/" target="_blank">
-                            <i class="fa fa-linkedin"></i>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="footer">
-            <h1 class="lobster-text">Follow us @ 
-                <a href="https://www.linkedin.com/school/code-institute/" target="_blank"><i
-                        class="fab fa-linkedin"></i></a>
-            </h1>
-            <p class="lobster-text">&copy; 2023 December Hackathon | Designed by Team_11</p>
-        </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
-    <script src="https://kit.fontawesome.com/27cbf33ba8.js" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+                crossorigin="anonymous"></script>
+            <script src="https://kit.fontawesome.com/27cbf33ba8.js" crossorigin="anonymous"></script>
+        
 </body>
 
 </html>
