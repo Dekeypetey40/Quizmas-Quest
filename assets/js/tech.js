@@ -64,7 +64,7 @@ let questions = [{
         choice1: '1974, Tomlinson',
         choice2: '1990, Berners-Lee',
         choice3: '1985, Steve Jobs',
-        choice: '1969, Bill Gates',
+        choice4: '1969, Bill Gates',
         answer: 1,
     },
     {
@@ -112,12 +112,12 @@ let questions = [{
         choice1: "HolidayJoy, 2008",
         choice2: "Xmas, 2010",
         choice3: "Santa'sLittleHelper, 2012",
-        choice: "YuletideCheer, 2015",
+        choice4: "YuletideCheer, 2015",
         answer: 1,
     },
     {
         question: "How has the use of social media platforms affected the sharing of holiday experiences and traditions?",
-        1: "Global outreach",
+        choice1: "Global outreach",
         choice2: "Real-time",
         choice3: "Community building",
         choice4: "All of the above",
@@ -152,7 +152,7 @@ let questions = [{
         choice1: "Immersive Santa's Grotto experiences",
         choice2: "Virtual Christmas concerts",
         choice3: "AR-powered holiday storybooks",
-        choice: "All of the above",
+        choice4: "All of the above",
         answer: 4,
     },
     {
