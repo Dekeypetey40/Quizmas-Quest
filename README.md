@@ -6,7 +6,7 @@ Tech The Halls
 
 
 ## Intro
-Tech The Halls welcomes you all to try our amazing quiz called COOL QUIZ NAME. You can play the game [here.](https://dekeypetey40.github.io/hackathon-team-11/)
+Tech The Halls welcomes you all to try our amazing quiz called COOL QUIZ NAME. You can play the game [here.](https://github.com/Dekeypetey40/hackathon-team-11/)
 
 #
 
