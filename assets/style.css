@@ -14,7 +14,11 @@
   font-size: 75%;
   font-family: 'Mountains of Christmas';
   color: #fff;
-  overflow: hidden;
+}
+/* Base game styling */
+body {
+  background-color: #294D4A;
+  overflow-x: hidden;
 }
 
 h1 {
@@ -661,11 +665,6 @@ input::placeholder {
 .high-score {
   font-size: 2.8rem;
   margin-bottom: 0.5rem;
-}
-
-/* Base game styling */
-body {
-  background-color: #294D4A;
 }
 
 .choice-container {
