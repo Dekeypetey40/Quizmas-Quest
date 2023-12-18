@@ -4,7 +4,7 @@
 
 
 :root {
-  background-color: #0f8a5f
+  background-color: #294D4A;
 }
 
 * {
@@ -203,19 +203,46 @@ h2 {
   padding: 1px;
   
 }
+
+
+.red-button {
+  background: linear-gradient(90deg, #C04777, #E795BA, #EEA8C8, #FFF);
+  width: auto;
+  /* Adjust the width as needed */
+  padding: 8px 16px;
+  /* Adjust the padding for height and width */
+  /* Add any other styles you want */
+  transition: background-color 0.3s ease;
+}
+
+.red-button:hover {
+  background: linear-gradient(90deg, #C04777, #E795BA, #EEA8C8, #FFF);
+}
 /* for the contact page*/
+.contact-container{
+  height: 100vh;
+}
+.contact-text {
+  margin-top: 15px;
+}
+
 .container-contact {
   background-image: url("../assets/images/santacoding.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  min-width: 100vw;
+  height: 100vh;
   display: flex;
   justify-content: space-between;
   position: relative;
   /* Make sure it's a positioned element for absolute positioning */
 }
-
+.contact-footer {
+ text-align: center;
+ position: fixed;
+ bottom: 0;
+ left: 0;
+}
 
 .contact {
   min-width: 100%;
@@ -227,7 +254,6 @@ h2 {
   align-items: center;
   text-align: center;
   border-radius: 10%;
-
 }
 
 .container-con {
@@ -248,36 +274,12 @@ h2 {
   margin-left: 23%;
 }
 
-.contact-form {
-  text-align: left;
-}
-
 .contact-form h3,
 .contact-info h3 {
   font-size: 24px;
   margin-bottom: 20px;
   /* Fix the typo here */
   color: #00CC00;
-}
-
-.form-fill {
-  margin-bottom: 10px;
-}
-
-.form-fill input,
-.form-control .form-fill textarea {
-  width: 100%;
-  padding: 12px;
-  border-radius: 8px;
-  border: none;
-  background-color: #f8f9fa;
-  color: #1ecc75;
-}
-
-.form-fill input:focus,
-.form-fill textarea:focus .form-control {
-  outline: none;
-  box-shadow: 0 0 8px #bbb;
 }
 
 button {
@@ -312,21 +314,6 @@ button:hover {
   color: #4caf50;
   margin-right: 10px;
 }
-
-.red-button {
-  background: linear-gradient(90deg, #C04777, #E795BA, #EEA8C8, #FFF);
-  width: auto;
-  /* Adjust the width as needed */
-  padding: 8px 16px;
-  /* Adjust the padding for height and width */
-  /* Add any other styles you want */
-  transition: background-color 0.3s ease;
-}
-
-.red-button:hover {
-  background: linear-gradient(90deg, #C04777, #E795BA, #EEA8C8, #FFF);
-}
-
 /* for the team member */
 
 .section-title h1 {
@@ -339,18 +326,16 @@ button:hover {
 }
 
 .team-area {
-  width: 80%;
+  width: 70%;
   background-color: #e4e6e5;
   margin-left: 10%;
   text-align: center;
-  border-radius: 10%;
 }
 
 .team-box {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 20px;
 }
 
 .box {
@@ -359,7 +344,6 @@ button:hover {
   padding: 30px 10px;
   background: #cbc8c8;
   text-align: center;
-  border-radius: 5px;
   overflow: hidden;
   box-shadow: 10px 10px 15px #c7c4c4, -10px -10px 15px #fff;
 }
@@ -815,15 +799,30 @@ input::placeholder {
   }
 }
 /* Contact media queries */
-@media screen and(max-width:768px) {
-  .container-con {
-    padding: 20px;
+@media screen and (max-width: 2000px) { /* Adjust for tablets */
+  .team-box {
+    align-items: center;
   }
-
-  .contact-wrapper {
-    grid-template-columns: repeat(2, 1fr);
+  .team-area {
+    width: 60%;
+    margin: auto;
   }
+}
+@media screen and (max-width: 768px) { /* Adjust for tablets */
+  .team-box {
+    flex-direction: column;
+    align-items: center;
+  }
+  .box {
+    width: 70%; /* Adjust the width for 2x2x2 layout */
+  }
+}
 
+@media screen and (max-width: 480px) { /* Adjust for mobile phones */
+  .box {
+    width: 50%;
+    height: 75%; /* Adjust the width for 1x1x1x1x1x1 layout */
+  }
 }
 
 @media screen and (max-width: 392px) {
