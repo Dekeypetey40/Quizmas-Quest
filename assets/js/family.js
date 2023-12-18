@@ -1,3 +1,10 @@
+const question = document.querySelector('#question');
+const choices = Array.from(document.querySelectorAll('.choice-text'));
+const progressText = document.querySelector('#progressText');
+const scoreText = document.querySelector('#score');
+const progressBarFull = document.querySelector('#progressBarFull');
+
+/* Quit confirmation for user */
 document.addEventListener("DOMContentLoaded", function () {  
     document.getElementById("quitButton").addEventListener("click", quit); // event listener to the "Quit Game" link
   });
@@ -15,13 +22,26 @@ document.addEventListener("DOMContentLoaded", function () {
       alert("You've chosen to stay. Continue enjoying!");
     }
   }
-
-
-const question = document.querySelector('#question');
-const choices = Array.from(document.querySelectorAll('.choice-text'));
-const progressText = document.querySelector('#progressText');
-const scoreText = document.querySelector('#score');
-const progressBarFull = document.querySelector('#progressBarFull');
+  /* Restart Confirmation for User */
+  document.addEventListener("DOMContentLoaded", function () {  
+    document.getElementById("restartButton").addEventListener("click", quit); // event listener to the "Quit Game" link
+  });
+  
+  function quit(event) {
+    event.preventDefault();
+  
+    // Display a Quit confirmation message
+    const userResponse = confirm("Are you sure you want to restart the quiz? Click 'OK' to restart or 'Cancel' to keep playing.");
+  
+    if (userResponse) {
+      alert("Reloading!");
+      soundFile.play();
+      location.reload();; // Reloads the page
+      
+    } else {
+      alert("You've chosen to stay. Go get em' tiger!");
+    }
+  }
 
 
 /*Declaring variebls*/
