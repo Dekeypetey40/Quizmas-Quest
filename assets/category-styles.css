@@ -8,24 +8,6 @@
     background-size: cover;
 }
 
-.container-family {
-    background-image: url("../assets/images/christmas_family6.webp");
-
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
-    /* max-width: 80rem; */
-    /* margin: 0 auto; */
-}
-
-.container-history {
-    background-image: url("../assets/images/christmas_history.jpeg");
-}
-
-.container-tech {
-    background-image: url("..assets/images/christmas_tech.jpeg");
-
-}
 
 
 .geo-hud,
@@ -88,16 +70,11 @@
     text-decoration: none;
     color: #FFF;
     text-shadow: 0 1px 2px rgba(0, 0, 0, 0.75);
-    background: #C8C8C8;
+    background: #235E6F;
     outline: none;
     border-radius: 12px;
     /* Reduced border radius for a cleaner look */
     border: 1px solid #C8C8C8;
-    box-shadow:
-        inset 1px 1px 0px rgba(255, 255, 255, 0.25),
-        inset 0 0 6px #a23227,
-        inset 0 80px 80px -40px #ac3223,
-        1px 1px 3px rgba(0, 0, 0, 0.75);
 
     position: relative;
     overflow: visible;
@@ -121,26 +98,13 @@
 
 } 
 
-.choice-button:hover {
-    background: #C8C8C8;
-    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.75), 0 0 40px #FFF;
-    box-shadow:
-        inset 1px 1px 0px rgba(255, 255, 255, 0.25),
-        /* highlight */
-        inset 0 0 6px #C8C8C8,
-        /* inner glow */
-        inset 0 80px 80px -40px #C8C8C8,
-        /* gradient */
-        1px 1px 3px rgba(0, 0, 0, 0.75);
-    /* shadow */
-
-}
-
 .choice-button:focus {
     outline: none;
     /*FF*/
 }
-
+.choice-button:hover {
+    cursor: pointer;
+}
 .choice-button:active {
     box-shadow:
         inset 1px 1px 0px rgba(255, 255, 255, 0.25),
