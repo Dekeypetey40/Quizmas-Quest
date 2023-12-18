@@ -171,7 +171,7 @@ h2 {
   }
   .story {
     width: 80%;
-    background-color: rgba(113, 109, 109, 0.8); /* Red with 70% opacity */
+    background-color: rgba(113, 109, 109, 0.8); /* Red with 80% opacity */
     padding: 20px; /* Add padding for better visibility */
     border-radius: 10px; /* Add border-radius for rounded corners */
   }
@@ -202,7 +202,8 @@ h2 {
   min-width: 100vw;
   display: flex;
   justify-content: space-between;
-  position: relative; /* Make sure it's a positioned element for absolute positioning */
+  position: relative; 
+  
  }
   
 
@@ -244,7 +245,7 @@ h2 {
 .contact-form h3,
 .contact-info h3 {
   font-size: 24px;
-  margin-bottom: 20px; /* Fix the typo here */
+  margin-bottom: 20px; 
   color: #00CC00;
 }
 
@@ -303,18 +304,6 @@ button:hover {
   color: #4caf50;
   margin-right: 10px;
 }
-
-.red-button {
-  background: linear-gradient(90deg, #C04777, #E795BA, #EEA8C8, #FFF);
-  width: auto; /* Adjust the width as needed */
-  padding: 8px 16px; /* Adjust the padding for height and width */
-  /* Add any other styles you want */
-  transition: background-color 0.3s ease;
-}
-
-.red-button:hover {
-  background: linear-gradient(90deg, #C04777, #E795BA, #EEA8C8, #FFF);
-} 
 
 @media screen and(max-width:768px){
   .container-con{
